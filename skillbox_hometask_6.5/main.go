@@ -11,19 +11,17 @@ func main() {
 	for bag1= 0; bag1<= volumeOfBag1; bag1 ++ {
 		fmt.Println(bag1)
 		if bag1 == volumeOfBag1 {
-			continue
-		}
-	}
-	for bag2= 0; bag2<= volumeOfBag2; bag2 ++ {
-		fmt.Println(bag2)
-		if bag2 == volumeOfBag2 {
-			continue
-		}
-	}
-	for bag3= 0; bag3<= volumeOfBag3; bag3 ++ {
-		fmt.Println(bag3)
-		if bag3 == volumeOfBag3 {
-			break
+			for bag2= 0; bag2<= volumeOfBag2; bag2 ++ {
+				fmt.Println(bag2)
+				if bag2 == volumeOfBag2 {
+					for bag3= 0; bag3<= volumeOfBag3; bag3 ++ {
+						fmt.Println(bag3)
+						if bag3 == volumeOfBag3 {
+							break
+						}
+					}
+				}
+			}
 		}
 	}
 }

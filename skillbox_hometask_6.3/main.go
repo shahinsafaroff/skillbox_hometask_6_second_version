@@ -7,12 +7,9 @@ func main() {
 	fmt.Println("Discount for this item: ")
 	fmt.Scan(&discount)
 
-	for (discount<=price*0.3){
-		if (discount<=2000) {
+		if (discount == price*0.3 && discount <= 2000) {
 			fmt.Println("Here is final Discount Amount: ", discount)
 		} else {
 			fmt.Println("Discount is too much!!!")
-			break
 		}
 	}
-}

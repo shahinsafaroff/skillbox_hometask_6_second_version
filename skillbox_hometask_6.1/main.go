@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	var number, i int
+	var count, i int
 	fmt.Println("Please enter a number:  ")
-	fmt.Scan(&number)
-	for i=0;i<number;i++{
+	fmt.Scan(&count)
+	for i = 0; i <= count; i++{
 		fmt.Println(i)
 	}
-	fmt.Println(number)
+	fmt.Println(count)
 }

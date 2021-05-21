@@ -8,20 +8,21 @@ func main() {
 	fmt.Scan(&volumeOfBag2)
 	fmt.Println("Please enter Third Bags volume: ")
 	fmt.Scan(&volumeOfBag3)
-	for bag1= 0; bag1<= volumeOfBag1; bag1 ++ {
-		fmt.Println(bag1)
-		if bag1 == volumeOfBag1 {
-			for bag2= 0; bag2<= volumeOfBag2; bag2 ++ {
-				fmt.Println(bag2)
-				if bag2 == volumeOfBag2 {
-					for bag3= 0; bag3<= volumeOfBag3; bag3 ++ {
-						fmt.Println(bag3)
-						if bag3 == volumeOfBag3 {
-							break
-						}
-					}
-				}
-			}
+	for  {
+		if bag1 < volumeOfBag1 {
+			bag1++
+			continue
 		}
-	}
+		if bag2 < volumeOfBag2 {
+			bag2++
+			continue
+		}
+		if bag3 < volumeOfBag3 {
+			bag3++
+			continue
+		}
+		break
+			}
+	fmt.Println("Baskets are filled in: ")
+	fmt.Println(bag1, bag2, bag3)
 }
